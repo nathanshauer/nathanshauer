@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+a[href^="tel"] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
+}
+
 /* Navbar Styles */
 .navbar-custom {
     background-color: #00008b;
