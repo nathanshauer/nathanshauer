@@ -36,6 +36,7 @@ body {
     text-align: center;
     position: relative;
     height: 60vh; /* Make the banner fill the screen height */
+    min-height: 460px;
 }
 
 .banner-content {
@@ -50,14 +51,14 @@ body {
 
 .profile-photo {
     border-radius: 0%;
-    max-width: 400px; /* Increase the size */
-    max-height: 400px; /* Increase the size */
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
-    margin-right: 20px;
-    position: relative;
-    z-index: 1;
+    margin-right: 10px;
+    position: relative;    
     bottom: 0; /* Make the profile photo touch the bottom of the div */
+    object-fit: cover; /* Ensure the image covers the entire area */
 }
 
 .video-container {
@@ -66,6 +67,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Ensure the video container does not exceed the width of its parent */
+    max-height: 100%; /* Ensure the video container does not exceed the height of its parent */
+    overflow: hidden; /* Hide any overflowing content */
 }
 
 .simulation-photos {
@@ -94,8 +101,14 @@ body {
 
 .about-me {
     width: 30%; /* Adjust width to fit the content */
+    max-width: 100%; /* Ensure the about-me section does not exceed the width of its parent */
     text-align: left;
     padding-left: 20px;
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    word-break: break-word; /* Break long words to prevent overflow */
+    overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    overflow: hidden; /* Hide any overflowing content */
+    font-size: 1em; /* Default font size */
 }
 
 /* Section Styles */
@@ -127,7 +140,21 @@ footer p {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .profile-photo {
+        max-width: 400px; /* Decrease the size */
+        max-height: 400px; /* Decrease the size */        
+    }
+}
+
+@media (max-width: 1000px) {
+    .profile-photo {
+        max-width: 350px; /* Decrease the size */
+        max-height: 350px; /* Decrease the size */    
+    }
+}
+
+@media (max-width: 850px) {
     .container {
         padding: 20px;
     }
@@ -138,10 +165,11 @@ footer p {
 
     .profile-photo {
         border-radius: 50%;
-        max-width: 200px; /* Adjust the size for smaller screens */
-        max-height: 200px; /* Adjust the size for smaller screens */
+        max-width: 250px; /* Adjust the size for smaller screens */
+        max-height: 250px; /* Adjust the size for smaller screens */
         left: 5%;
         padding-bottom: 1%;
+        align-self: center; /* Align the profile photo to the center of the container */    
     }
 
     .banner-content {
@@ -163,5 +191,8 @@ footer p {
 
     .about-me {
         padding-left: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 0.9em; /* Adjust font size for smaller screens */
     }
 }
