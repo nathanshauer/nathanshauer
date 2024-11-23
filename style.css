@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #00008b;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #d4d4d4 !important;
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 0 0px; /* Add padding to the top to create space for the profile photo */
+    text-align: center;
+    position: relative;
+    height: 60vh; /* Make the banner fill the screen height */
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.profile-photo {
+    border-radius: 0%;
+    max-width: 400px; /* Increase the size */
+    max-height: 400px; /* Increase the size */
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+    bottom: 0; /* Make the profile photo touch the bottom of the div */
+}
+
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.simulation-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 40%; /* Adjust width to make space for the about me section */
+    overflow: hidden;
+    position: relative;
+}
+
+.simulation-photo {
+    display: none;
+    object-fit: cover; /* Ensure the images cover the entire area */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.simulation-photo:first-child {
+    display: block;
+}
+
+.about-me {
+    width: 30%; /* Adjust width to fit the content */
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Section Styles */
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about, #research, #contact {
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-photo {
+        border-radius: 50%;
+        max-width: 200px; /* Adjust the size for smaller screens */
+        max-height: 200px; /* Adjust the size for smaller screens */
+        left: 5%;
+        padding-bottom: 1%;
+    }
+
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .simulation-photos, .about-me {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner {
+        height: auto;
+    }
+    
+    .simulation-photos {
+        height: 20vh;
+    }
+
+    .about-me {
+        padding-left: 0;
+    }
+}
