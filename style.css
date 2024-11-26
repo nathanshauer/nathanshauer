@@ -69,6 +69,7 @@ a[href^="tel"] {
 .video-container {
     flex: 1;
     display: flex;
+    flex-direction: column; /* Arrange items in a column */
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -78,6 +79,11 @@ a[href^="tel"] {
     max-width: 100%; /* Ensure the video container does not exceed the width of its parent */
     max-height: 100%; /* Ensure the video container does not exceed the height of its parent */
     overflow: hidden; /* Hide any overflowing content */
+}
+
+.video-container p {
+    margin-bottom: 10px; /* Add some space between the paragraph and the video */
+    text-align: center; /* Center align the text */
 }
 
 .simulation-photos {
@@ -131,6 +137,34 @@ h2 {
 
 #about, #research, #contact {
     margin-bottom: 40px;
+}
+
+#team {
+    text-align: center;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.team-member p {
+    color: #333;
 }
 
 /* Footer Styles */
