@@ -234,4 +234,9 @@ footer p {
         padding-bottom: 15px;
         font-size: 0.9em; /* Adjust font size for smaller screens */
     }
+
+    .team-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
