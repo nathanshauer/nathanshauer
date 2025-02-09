@@ -1,11 +1,12 @@
 # Nathan Shauer
 Assistant Professor
+[https://www.nathanshauer.com](https://www.nathanshauer.com)
 
 Department of Structures - DES  
 School of Civil Engineering, Architecture and Urban Planning  
 Universidade Estadual de Campinas (UNICAMP)  
 E-mail: [shauer@unicamp.br](mailto:shauer@unicamp.br)  
-Phone: +55 (19) 35212325  
+Phone: +55 (19) 35212325
 
 **Research Interests**  
 
@@ -16,18 +17,3 @@ Phone: +55 (19) 35212325
 - Hydraulic Fracturing
 - Mixed Finite Element Methodologies
 - High Performance Computing
-
-<!--
-**nathanshauer/nathanshauer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
